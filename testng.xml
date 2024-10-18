@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/TEST/saucedemoPOM/src/test/java/Tests">
+        <classes>
+            <class name="Tests.TC01_LoginTest">
+                <methods>
+                    <include name="invalidLogin_LockedOutUser"/>
+                    <include name="invalidLogin_InvalidUsernameOrInvalidPassword"/>
+                    <include name="validLoginTC"/>
+
+                </methods>
+            </class>
+            <class name="Tests.TC02_ProductTest">
+                <methods>
+                    <include name="CompleteOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
